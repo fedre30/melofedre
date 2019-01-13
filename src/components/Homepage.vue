@@ -1,7 +1,9 @@
 <template>
     <div class="Homepage">
-        <div class="Homepage-header"><img src="../assets/img/banniere.jpg" alt=""></div>
-        <h1 class="Homepage-title">{{title}}</h1>
+        <div class="Homepage-header"><img src="../assets/img/banniere.jpg" alt="">
+            <h1 class="Homepage-title">{{title}}</h1>
+        </div>
+
 
         <div class="Homepage-content">
             <div class="Homepage-song">
@@ -115,6 +117,10 @@
 
     @media screen and (min-width: 720px)
         .Homepage
+            display: flex
+            height: 100vh
+            justify-content: center
+            align-items: center
             &-header
                 width: 50%
                 margin: 0 auto
