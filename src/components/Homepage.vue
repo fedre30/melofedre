@@ -113,4 +113,17 @@
         &-link a:hover
             color: $tertiary
 
+    @media screen and (min-width: 720px)
+        .Homepage
+            &-header
+                width: 50%
+                margin: 0 auto
+            &-content
+                width: 50%
+                margin: 0 auto
+            &-album
+                width: 50%
+                margin: 0 auto
+
+
 </style>
