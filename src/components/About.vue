@@ -84,7 +84,7 @@
                 img
                     width: 100%
                     position: absolute
-                    top: -20.3rem
+                    top: -30vh
                     left: -3rem
             &-text
                 width: 100%
