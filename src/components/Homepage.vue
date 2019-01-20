@@ -1,8 +1,8 @@
 <template>
     <div class="Homepage">
         <Header></Header>
-        <Music></Music>
-        <div class="Youtube">
+        <Music v-scroll-reveal.reset="{delay: (isMobile ? 50 : 250)}"></Music>
+        <div class="Youtube"  v-scroll-reveal.reset="{delay: (isMobile ? 50 : 250)}">
             <Title title="Youtube"/>
             <div class="Youtube-wrapper">
                 <div class="Youtube-downloads">
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <About></About>
+        <About v-scroll-reveal.reset="{delay: (isMobile ? 50 : 250)}"></About>
         <Footer></Footer>
     </div>
 </template>

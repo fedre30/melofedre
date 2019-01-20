@@ -2,7 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import Element from 'element-ui'
 import VueYoutube from 'vue-youtube'
+import VueScrollReveal from 'vue-scroll-reveal';
 
+
+Vue.use(VueScrollReveal);
 Vue.use(VueYoutube);
 Vue.use(Element);
 
