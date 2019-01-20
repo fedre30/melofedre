@@ -99,6 +99,7 @@
             font-size: 2rem
             font-weight: bold
             margin: 1rem
+            color: white
 
         &-item
             width: 100%
@@ -106,6 +107,7 @@
             justify-content: center
             align-items: center
             margin: 2rem auto
+            color: white
 
         &-image
             width: 2rem

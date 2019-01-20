@@ -12,7 +12,7 @@
                     </ul>
                 </div>
                 <div class="Youtube-player">
-                <youtube :video-id="videoId" :width="790" :height="560"></youtube>
+                <youtube :video-id="videoId" :width="isMobile ? 360 : 790" :height="isMobile? 240 : 560"></youtube>
                 </div>
             </div>
         </div>
@@ -69,6 +69,23 @@
         width: 100%
         height: 100vh
         position: relative
+        color: white
+        &-player
+            width: 100%
+        &-wrapper
+            display: flex
+            width: 100%
+            margin: 3rem 0
+            justify-content: center
+            align-items: center
+            flex-direction: column
+        &-downloads
+            width: 100%
+            margin-bottom: 5rem
+        &-downloads-title
+            text-align: center
+            font-size: 2rem
+            margin: 0 0 2rem 0
 
     @media screen and (min-width: 720px)
         .Homepage
@@ -84,6 +101,7 @@
             display: flex
             justify-content: center
             align-items: center
+
             &-player
                 width: 100%
             &-wrapper
@@ -92,6 +110,8 @@
                 margin: 3rem auto
                 justify-content: center
                 align-items: center
+                flex-direction: row
+                color: $text
             &-downloads
                 width: 100%
             &-downloads-title

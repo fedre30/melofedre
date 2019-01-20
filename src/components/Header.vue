@@ -23,7 +23,13 @@
     @import "../assets/styles/variables"
     .Header
         width: 100%
+        height: 100vh
         margin-bottom: 3rem
+        color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
 
         &-header-image
             width: 100%
@@ -35,7 +41,20 @@
             font-size: 4rem
             margin: 2rem 0
         &-scroll
-            display: none
+            display: block
+            color: white
+            position: absolute
+            bottom: 3rem
+            left: 45%
+            font-size: 1.5rem
+        &-underline
+            width: 50px
+            height: 3px
+            position: absolute
+            top: 30px
+            left: 20px
+            background-color: white
+            font-size: 1.5rem
 
     @media screen and (min-width: 720px)
         .Header
