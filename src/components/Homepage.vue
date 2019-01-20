@@ -2,7 +2,20 @@
     <div class="Homepage">
         <Header></Header>
         <Music></Music>
-        <Youtube></Youtube>
+        <div class="Youtube">
+            <Title title="Youtube"/>
+            <div class="Youtube-wrapper">
+                <div class="Youtube-downloads">
+                    <h3 class="Youtube-downloads-title">Downloads</h3>
+                    <ul class="Youtube-list">
+                        <li class="Youtube-item" v-for="doc in downloads" :key="doc.path"><a target="_blank" :href="doc.path" :download="doc.title">{{doc.title}}</a></li>
+                    </ul>
+                </div>
+                <div class="Youtube-player">
+                <youtube :video-id="videoId" :width="790" :height="560"></youtube>
+                </div>
+            </div>
+        </div>
         <About></About>
         <Footer></Footer>
     </div>
@@ -12,17 +25,24 @@
 
   import Header from './Header.vue';
   import Music from './Music.vue';
-  import Youtube from './Youtube.vue';
   import About from './About.vue';
   import Footer from './Footer.vue';
+  import Title from './Title.vue';
 
   export default {
     name: 'Homepage',
     props: {},
-    components: {Youtube, Header, Music, About, Footer},
+    components: {Title, Header, Music, About, Footer},
     data() {
       return {
-        mobile: false
+        mobile: false,
+        videoId: '0o3tDTelBpQ',
+        downloads: [
+          {
+            title: 'Parigi economica',
+            path: './assets/docs/'
+          }
+        ]
       }
     },
 
@@ -45,10 +65,10 @@
         height: auto
         background-color: $main
         overflow: hidden
-
-
-
-
+    .Youtube
+        width: 100%
+        height: 100vh
+        position: relative
 
     @media screen and (min-width: 720px)
         .Homepage
@@ -57,8 +77,27 @@
             justify-content: center
             align-items: center
             background: none
-
-
+        .Youtube
+            width: 100%
+            height: 100vh
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            &-player
+                width: 100%
+            &-wrapper
+                display: flex
+                width: 80%
+                margin: 3rem auto
+                justify-content: center
+                align-items: center
+            &-downloads
+                width: 100%
+            &-downloads-title
+                text-align: center
+                font-size: 3rem
+                margin: 0 0 2rem 0
 
 
 

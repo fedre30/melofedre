@@ -7,10 +7,16 @@
 <script>
 import Homepage from './components/Homepage.vue'
 
+
 export default {
   name: 'app',
   components: {
     Homepage
+  },
+  data() {
+    return {
+
+    }
   }
 }
 </script>
@@ -21,7 +27,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #4A4A4A;
 
   a {
     text-decoration: none;
