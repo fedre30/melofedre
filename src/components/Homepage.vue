@@ -45,7 +45,6 @@
         ]
       }
     },
-
     computed: {
       isMobile() {
         // eslint-disable-next-line no-unused-expressions
