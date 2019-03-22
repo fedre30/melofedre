@@ -43,10 +43,10 @@
 </script>
 
 <style scoped lang="sass">
-    @import "../assets/styles/variables"
+    @import "../assets/styles/all"
     .About
         width: 100%
-        height: 130vh
+        height: auto
         position: relative
         &-wrapper
             width: 80%
@@ -63,6 +63,7 @@
             color: white
             text-align: left
             line-height: 1.6rem
+            font-size: 0.8rem
     @media screen and (min-width: 720px)
         .About
             width: 100%
@@ -88,8 +89,8 @@
                     left: -3rem
             &-text
                 width: 100%
-                font-size: 1.2rem
-                line-height: 3rem
+                font-size: 1rem
+                line-height: 2.2rem
                 text-align: left
                 color: $text
 

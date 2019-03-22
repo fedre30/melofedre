@@ -2,8 +2,8 @@
     <div class="Header">
         <div class="Header-opaque"></div>
         <div class="Header-header-image"></div>
-        <h1 class="Header-title">{{title}}</h1>
-        <div class="Header-scroll">scroll <span class="Header-underline"></span></div>
+        <h1 class="Header-title tracking-in-expand-no-infinite">{{title}}</h1>
+        <div class="Header-scroll tracking-in-expand">scroll <span class="Header-underline"></span></div>
     </div>
 </template>
 
@@ -20,7 +20,7 @@
 </script>
 
 <style scoped lang="sass">
-    @import "../assets/styles/variables"
+    @import "../assets/styles/all"
     .Header
         width: 100%
         height: 100vh

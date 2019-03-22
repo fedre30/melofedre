@@ -41,6 +41,9 @@
             font-size: 3.5rem
             font-weight: 100
             line-height: 3rem
+            border-bottom-left-radius: 0.6rem
+            border-top-left-radius: 0.6rem
+            margin-bottom: 3rem
 
 
 </style>

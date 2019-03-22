@@ -83,7 +83,7 @@
 </script>
 
 <style scoped lang="sass">
-    @import "../assets/styles/variables"
+    @import "../assets/styles/all"
     .Music
         width: 100%
         margin: 3rem auto
@@ -136,7 +136,7 @@
 
 
             &-song
-                width: 80%
+                width: 100%
             &-album
                 width: 100%
             &-container

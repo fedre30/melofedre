@@ -8,7 +8,7 @@
                 <div class="Youtube-downloads">
                     <h3 class="Youtube-downloads-title">Downloads</h3>
                     <ul class="Youtube-list">
-                        <li class="Youtube-item" v-for="doc in downloads" :key="doc.path"><a target="_blank" :href="doc.path" :download="doc.title">{{doc.title}}</a></li>
+                        <li class="Youtube-item" v-for="doc in downloads" :key="doc.path"><a target="_blank" :href="doc.path">{{doc.title}}</a></li>
                     </ul>
                 </div>
                 <div class="Youtube-player">
@@ -40,7 +40,7 @@
         downloads: [
           {
             title: 'Parigi economica',
-            path: './assets/docs/'
+            path: './docs/parigi_economica.pdf'
           }
         ]
       }
@@ -58,12 +58,12 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
 
-    @import "../assets/styles/variables"
+    @import "../assets/styles/all"
     .Homepage
         width: 100%
         height: auto
         background-color: $main
-        overflow: hidden
+        overflow-x: hidden
     .Youtube
         width: 100%
         height: 100vh
@@ -93,10 +93,10 @@
             justify-content: center
             align-items: center
             background: none
+            overflow: hidden
         .Youtube
             width: 100%
             height: 100vh
-            position: relative
             display: flex
             justify-content: center
             align-items: center
