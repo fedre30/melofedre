@@ -100,7 +100,6 @@
             display: flex
             justify-content: center
             align-items: center
-
             &-player
                 width: 100%
             &-wrapper
